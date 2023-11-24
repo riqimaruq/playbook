@@ -4,7 +4,7 @@
   tasks:
     -
       name: Uninstall cortex-agent
-      yum:
+      zyper:
         name: cortex-agent
         autoremove: yes
         state: absent
