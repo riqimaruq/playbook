@@ -6,5 +6,5 @@
     -
       name: delete cortex-agent
       file:
-          path: /home/adminazure/check-mk-agent-2.1.0p25-1.noarch.rpm
+          path: /home/adminazure/cortex-8.0.0.94458.rpm
           state: absent
