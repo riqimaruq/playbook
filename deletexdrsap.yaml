@@ -1,0 +1,10 @@
+-
+  hosts: sap
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: delete cortex-agent
+      file:
+          path: /home/adminazure/check-mk-agent-2.1.0p25-1.noarch.rpm
+          state: absent
