@@ -1,0 +1,10 @@
+-
+  hosts: ubuntuaz
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: "1. delete cortex-agent"
+      file:
+          path: /home/azureuser/check-mk-agent_2.1.0p25-1_all.deb
+          state: absent
