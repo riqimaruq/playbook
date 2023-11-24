@@ -4,7 +4,6 @@
   tasks:
     -
       name: Uninstall cortex-agent
-      zypper:
+      community.general.zypper:
         name: cortex-agent
-        autoremove: yes
         state: absent
