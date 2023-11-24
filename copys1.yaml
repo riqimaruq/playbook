@@ -1,0 +1,10 @@
+- hosts: ubuntuazuser
+  become: true
+
+
+  tasks:
+    -
+      name: "1. copy file sentinelone"
+      copy:
+        src: /home/azmovicprod/SentinelAgent_linux_v23_1_2_9.deb
+        dest: /home/azureuser/SentinelAgent_linux_v23_1_2_9.deb
