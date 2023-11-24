@@ -1,0 +1,10 @@
+-
+  hosts: sap
+  become: true
+  tasks:
+    -
+      name: Uninstall cortex-agent
+      yum:
+        name: cortex-agent
+        autoremove: yes
+        state: absent
