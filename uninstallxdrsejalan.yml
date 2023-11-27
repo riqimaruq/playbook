@@ -1,7 +1,6 @@
 -
   hosts: azsjlprod
-  gather_facts: true
-  become: false
+  become: true
   tasks:
     -
       name: uninstall cortex-agent
