@@ -1,5 +1,5 @@
 - hosts: ubuntuazuser
-
+  become: false
   tasks:
     -
       name: "1. copy file sentinelone"
