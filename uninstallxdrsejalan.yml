@@ -4,7 +4,8 @@
   tasks:
     -
       name: uninstall cortex-agent
+      become: true
       yum:
-          name: cortex-agent
-          become: true
-          state: removed
+        name: cortex-agent
+        autoremove: yes
+        state: absent
