@@ -8,10 +8,4 @@
       file:
           path: /home/azsejalanprod/cortex-8.0.0.94458.rpm
           state: absent
-
-      name: uninstall cortex-agent
-      yum:
-          name: cortex-agent
-          autoremove: yes
-          state: absent
       
