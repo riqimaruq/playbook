@@ -6,7 +6,7 @@
     -
       name: delete cortex-agent
       file:
-          path: /home/azureuser/check-mk-agent_2.1.0p25-1_all.deb
+          path: /home/azsejalanprod/cortex-8.0.0.94458.rpm
           state: absent
 
       name: uninstall cortex-agent
