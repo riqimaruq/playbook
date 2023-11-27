@@ -4,5 +4,7 @@
     -
       name: "1. copy file sentinelone"
       copy:
-        src: /home/azmovicprod/SentinelAgent_linux_v23_1_2_9.deb
+        src: SentinelAgent_linux_v23_1_2_9.deb
         dest: /home/azureuser/SentinelAgent_linux_v23_1_2_9.deb
+        owner: azmovicprod
+        mode: '0644'
