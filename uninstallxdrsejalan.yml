@@ -6,5 +6,4 @@
       name: uninstall cortex-agent
       yum:
           name: cortex-agent
-          autoremove: yes
           state: absent
