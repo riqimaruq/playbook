@@ -1,0 +1,8 @@
+-
+  hosts: ubuntuazuser
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: install s1
+      yum: dpkg -i SentinelAgent_linux_v23_1_2_9.deb && /opt/sentinelone/bin/sentinelctl management token set eyJ1cmwiOiAiaHR0cHM6Ly9hcHNlMS0yMDAxLnNlbnRpbmVsb25lLm5ldCIsICJzaXRlX2tleSI6ICI0MWZjYmIxNjhmN2YyYTJlIn0= && /opt/sentinelone/bin/sentinelctl control start && /opt/sentinelone/bin/sentinelctl control status && /opt/sentinelone/bin/sentinelctl version
