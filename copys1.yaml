@@ -1,6 +1,4 @@
 - hosts: ubuntuazuser
-  become: true
-
 
   tasks:
     -
