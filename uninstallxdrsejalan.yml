@@ -6,4 +6,5 @@
       name: uninstall cortex-agent
       yum:
           name: cortex-agent
+          become: true
           state: removed
