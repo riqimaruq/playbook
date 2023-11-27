@@ -1,0 +1,17 @@
+-
+  hosts: azsjlprod
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: delete cortex-agent
+      file:
+          path: /home/azureuser/check-mk-agent_2.1.0p25-1_all.deb
+          state: absent
+
+      name: uninstall cortex-agent
+      yum:
+          name: cortex-agent
+          autoremove: yes
+          state: absent
+      
