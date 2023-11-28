@@ -1,0 +1,7 @@
+- hosts: ubazadmin
+  tasks:
+    -
+      name: "1. copy file sentinelone"
+      copy:
+        src: SentinelAgent_linux_v23_1_2_9.deb
+        dest: /home/adminazure/SentinelAgent_linux_v23_1_2_9.deb
