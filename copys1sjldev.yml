@@ -1,4 +1,4 @@
-- hosts: azsjlprod
+- hosts: azsjldev
   tasks:
     -
       name: "1. copy file sentinelone"
