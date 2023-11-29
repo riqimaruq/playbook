@@ -1,0 +1,12 @@
+-
+  hosts: azmovcen
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: "1. Uninstall cortex-agent"
+      tags: uninstall_cortex-agent
+      yum:
+        name: cortex-agent
+        autoremove: yes
+        state: absent
