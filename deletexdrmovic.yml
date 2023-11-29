@@ -1,0 +1,10 @@
+-
+  hosts: azmovcen
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: delete cortex-agent
+      file:
+          path: /home/azmovicprod/cortex-8.0.0.94458.rpm
+          state: absent
