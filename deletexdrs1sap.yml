@@ -1,0 +1,10 @@
+-
+  hosts: sap
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: delete xdr sentinel
+      file:
+          path: /home/adminazure/SentinelAgent_linux_v22_1_2_7.rpm
+          state: absent
