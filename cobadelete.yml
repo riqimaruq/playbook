@@ -5,4 +5,4 @@
   tasks:
     -
       name: Delete file txt
-      command: rm -rf testfile.txt
+      shell: rm -rf /home/azureuser/testfile.txt
