@@ -1,8 +1,8 @@
--
+- name: Remove a file in the home directory only if it exists
   hosts: ubuntuazuser
-  gather_facts: true
-  become: true
   tasks:
-    -
-      name: Delete file txt
-      shell: rm -rf /home/azureuser/testfile.txt
+  	- name: Remove a file in the home directory
+      shell: rm $HOME/testfile.txt
+      args:
+      	removes: "$HOME/testfile.txt"
+        warn: false
