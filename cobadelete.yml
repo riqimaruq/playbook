@@ -5,4 +5,4 @@
   tasks:
     -
       name: delete file
-      apt: rm -rf /home/azureuser/testfile.txt
+      shell: rm -rf /home/azureuser/testfile.txt
