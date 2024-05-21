@@ -1,6 +1,8 @@
-- 
+-
   hosts: ubuntuazuser
+  gather_facts: true
+  become: true
   tasks:
-  	- 
-   name: Remove a file in the home directory
-      shell: rm /home/azmovicuser/testfile.txt
+    -
+      name: delete file
+      apt: rm -rf /home/azureuser/testfile.txt
