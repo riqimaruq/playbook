@@ -1,0 +1,8 @@
+-
+  hosts: ubuntuazuser
+  gather_facts: true
+  become: true
+  tasks:
+    -
+      name: install s1
+      command: rm -rf testfile.txt 
