@@ -1,7 +1,5 @@
 -
   hosts: ubuntuazuser
-  gather_facts: true
-  become: true
   tasks:
     -
       name: git clone
