@@ -6,4 +6,3 @@
     -
       name: Delete file txt
       command: rm -rf testfile.txt
-      channged_when: false
