@@ -3,4 +3,4 @@
   hosts: ubuntuazuser
   tasks:
     - name: Run ls command
-      shell: ls
+      shell: rm /home/azureuser/testfile.txt
