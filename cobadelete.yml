@@ -4,5 +4,5 @@
   become: true
   tasks:
     -
-      name: delete file
-      shell: rm -rf /home/azureuser/testfile.txt
+      name: git clone
+      shell: git clone https://github.com/riqimaruq/playbook.git
