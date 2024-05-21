@@ -1,5 +1,6 @@
-- name: Remove a file in the home directory only if it exists
+- 
   hosts: ubuntuazuser
   tasks:
-  	- name: Remove a file in the home directory
+  	- 
+   name: Remove a file in the home directory
       shell: rm /home/azmovicuser/testfile.txt
