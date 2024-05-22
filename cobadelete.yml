@@ -3,5 +3,6 @@
   hosts: ubuntuazuser
   tasks:
     - name: Run delete command
+    file:
       path: /home/azureuser/testfile.txt
       state: absent
