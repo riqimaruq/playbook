@@ -2,5 +2,5 @@
 - name: Running a command
   hosts: ubuntuazuser
   tasks:
-    - name: Run ls command
-      shell: rm /home/azureuser/testfile.txt
+    - name: Run delete command
+      shell: rm -rf /home/azureuser/testfile.txt
