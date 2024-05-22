@@ -1,0 +1,6 @@
+---
+- name: mejalankan script di server
+  hosts: ubuntuazuser
+  tasks:
+    - name: menjalankan ls
+      command: ls
