@@ -3,4 +3,5 @@
   hosts: ubuntuazuser
   tasks:
     - name: Run delete command
-      shell: rm -rf /home/azureuser/testfile.txt
+      path: /home/azureuser/testfile.txt
+      state: absent
