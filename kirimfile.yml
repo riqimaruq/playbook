@@ -3,5 +3,5 @@
     -
       name: "Kirim file"
       copy:
-        src: /home/semaphore/test.txt
+        src: test.txt
         dest: /home/azureuser/test.txt
