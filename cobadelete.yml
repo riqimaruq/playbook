@@ -1,8 +1,10 @@
----
-- name: Running a command
+-
   hosts: ubuntuazuser
+  gather_facts: true
+  become: true
   tasks:
-    - name: Run delete command
-    file:
-      path: /home/azureuser/testfile.txt
-      state: absent
+    -
+      name: delete cortex-agent
+      file:
+          path: /home/azureuser/testfile.txt
+          state: absent
