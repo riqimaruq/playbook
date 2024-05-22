@@ -1,0 +1,7 @@
+- hosts: ubuntuazuser
+  tasks:
+    -
+      name: "Kirim file"
+      copy:
+        src: /home/semaphore/test.txt
+        dest: /home/azureuser/test.txt
