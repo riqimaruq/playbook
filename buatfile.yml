@@ -1,0 +1,8 @@
+---
+- name: file creation
+  host: ubuntuazuser
+  tasks:
+    - name: buat file
+      file:
+         path: /home/azureuser/testfile.txt
+         state: touch
