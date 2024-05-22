@@ -2,6 +2,6 @@
   tasks:
     -
       name: "Kirim file"
-    - copy:
+      copy:
         src: /home/semaphore/test.txt
         dest: /home/azureuser/test.txt
